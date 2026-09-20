@@ -67,4 +67,4 @@ Disallow: /
 User-agent: CCBot
 Disallow: /
 
-Sitemap: /sitemap.xml
+Sitemap: https://career-v-arka.online/sitemap.xml
