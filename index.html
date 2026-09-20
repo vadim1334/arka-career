@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<script>
+  (function(){
+    try{
+      if(localStorage.getItem('arka-theme') === 'light'){
+        document.documentElement.classList.add('light');
+      }
+    }catch(e){}
+  })();
+</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Карьера в Группе компаний АРКА — оценка бизнеса и консалтинг</title>
+<meta name="description" content="Группа компаний АРКА — оценка бизнеса и активов, НМА и стоимостной консалтинг. Карьера для оценщиков: экспертная свобода, прозрачные грейды, офис в Санкт-Петербурге." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="assets/favicon.svg" />
+<meta name="theme-color" content="#C41E3A" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="googlebot" content="index, follow" />
+<meta name="yandex" content="index, follow" />
+<link rel="canonical" href="./" />
+<link rel="manifest" href="site.webmanifest" />
+<link rel="alternate" type="text/plain" href="llms.txt" title="llms.txt" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:site_name" content="Группа компаний АРКА" />
+<meta property="og:title" content="Карьера в Группе компаний АРКА — оценка бизнеса и консалтинг" />
+<meta property="og:description" content="Оценочная и консалтинговая группа: оценка бизнеса, НМА и ИС. Прозрачные грейды, офис в Санкт-Петербурге." />
+<meta property="og:image" content="assets/office-photo.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Карьера в Группе компаний АРКА — оценка бизнеса и консалтинг" />
+<meta name="twitter:description" content="Оценочная и консалтинговая группа: оценка бизнеса, НМА и ИС. Прозрачные грейды, офис в Санкт-Петербурге." />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "#org",
+      "name": "Группа компаний АРКА",
+      "alternateName": ["Value ARKA consulting", "АРКА"],
+      "description": "Оценка бизнеса и активов, стоимостной и финансовый консалтинг, отраслевая аналитика, услуги по интеллектуальной собственности.",
+      "logo": "assets/favicon.svg",
+      "image": "assets/office-photo.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Торжковская, д. 5",
+        "addressLocality": "Санкт-Петербург",
+        "addressCountry": "RU"
+      },
+      "areaServed": "RU",
+      "knowsAbout": [
+        "оценка бизнеса",
+        "оценка ценных бумаг",
+        "нематериальные активы",
+        "интеллектуальная собственность",
+        "стоимостной консалтинг"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "#page",
+      "name": "Карьера в Группе компаний АРКА — оценка бизнеса и консалтинг",
+      "inLanguage": "ru",
+      "isPartOf": { "@id": "#org" },
+      "about": { "@id": "#org" },
+      "primaryImageOfPage": "assets/office-photo.jpg"
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;500;600;700&display=swap&subset=cyrillic,cyrillic-ext,latin" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  :root{
+    --radius: 0.75rem;
+    --scrim-lch: 0.02 0 0;
+    --fg-lch: 0.92 0.006 80;
+    --primary-lch: 0.527 0.202 27.7;
+    --logo-color: #ffffff;
+    --background: oklch(0.05 0 0);
+    --foreground: oklch(var(--fg-lch));
+    --card: oklch(0.12 0.015 250);
+    --primary: oklch(var(--primary-lch));
+    --primary-foreground: oklch(0.98 0.004 80);
+    --secondary: oklch(0.16 0.018 250);
+    --muted-foreground: oklch(0.62 0.012 240);
+    --accent: oklch(0.2 0.022 255);
+    --border: oklch(0.22 0.015 250);
+    --cold: oklch(0.65 0.1 220);
+  }
+  html.light{
+    --scrim-lch: 0.99 0 0;
+    --fg-lch: 0.16 0.01 260;
+    --primary-lch: 0.527 0.202 27.7;
+    --logo-color: var(--primary);
+    --background: oklch(0.985 0.003 90);
+    --card: oklch(0.97 0.004 90);
+    --secondary: oklch(0.94 0.006 90);
+    --muted-foreground: oklch(0.45 0.01 260);
+    --accent: oklch(0.9 0.01 255);
+    --border: oklch(0.88 0.008 90);
+    --primary-foreground: oklch(0.99 0.004 80);
+  }
+  *{ border-color: var(--border); box-sizing: border-box; }
+  html{
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(72px + env(safe-area-inset-top, 0px));
+    hanging-punctuation: first last;
+    quotes: "«" "»" "„" "“";
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  body{
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin:0;
+    overflow-x: clip;
+    padding-left: env(safe-area-inset-left, 0px);
+    padding-right: env(safe-area-inset-right, 0px);
+  }
+
+  :root{
+    --fs-display: clamp(1.75rem, 1.15rem + 4.2vw, 3.5rem);
+    --fs-h2: clamp(1.375rem, 1.15rem + 1.6vw, 2.25rem);
+    --fs-h3: clamp(1.05rem, 1rem + 0.4vw, 1.25rem);
+    --fs-lead: clamp(1rem, 0.95rem + 0.45vw, 1.25rem);
+    --measure: 38em;
+  }
+  h1, .t-display{
+    font-size: var(--fs-display);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+  h2, .t-h2{
+    font-size: var(--fs-h2);
+    font-weight: 700;
+    line-height: 1.22;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+  h3, .t-h3{
+    font-size: var(--fs-h3);
+    line-height: 1.35;
+    text-wrap: pretty;
+  }
+  p, li, blockquote, td, th, .t-body{
+    overflow-wrap: break-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphenate-limit-chars: 6 3 3;
+  }
+  p, .t-body{ text-wrap: pretty; line-height: 1.55; }
+  .t-lead{ font-size: var(--fs-lead); line-height: 1.5; max-width: var(--measure); text-wrap: pretty; }
+  .t-measure{ max-width: var(--measure); }
+  .num{ font-variant-numeric: tabular-nums; }
+
+  .section-wrap, .hero-pad{
+    padding-left: max(1rem, env(safe-area-inset-left, 0px));
+    padding-right: max(1rem, env(safe-area-inset-right, 0px));
+  }
+  @media (min-width: 640px){
+    .section-wrap, .hero-pad{ padding-left: max(1.5rem, env(safe-area-inset-left, 0px)); padding-right: max(1.5rem, env(safe-area-inset-right, 0px)); }
+  }
+  @media (min-width: 1024px){
+    .section-wrap, .hero-pad{ padding-left: max(2rem, env(safe-area-inset-left, 0px)); padding-right: max(2rem, env(safe-area-inset-right, 0px)); }
+  }
+
+  .hero-screen{
+    min-height: 100svh;
+    min-height: 100dvh;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+    *, *::before, *::after{ animation: none !important; transition: none !important; }
+    blockquote.quote:not(.is-in),
+    blockquote.quote.is-in{ opacity:1; transform:none; }
+  }
+  ::-webkit-scrollbar{ width:6px; }
+  ::-webkit-scrollbar-track{ background: var(--background); }
+  ::-webkit-scrollbar-thumb{ background: var(--border); border-radius:3px; }
+  ::-webkit-scrollbar-thumb:hover{ background: var(--primary); }
+
+  /* ---- text / color helpers (mirrors design tokens) ---- */
+  .text-primary{ color: var(--primary); }
+  .text-fg{ color: var(--foreground); }
+  .text-fg-90{ color: oklch(var(--fg-lch) / 0.9); }
+  .text-fg-80{ color: oklch(var(--fg-lch) / 0.8); }
+  .text-fg-75{ color: oklch(var(--fg-lch) / 0.75); }
+  .text-fg-70{ color: oklch(var(--fg-lch) / 0.7); }
+  .text-fg-60{ color: oklch(var(--fg-lch) / 0.6); }
+  .text-muted{ color: var(--muted-foreground); }
+  .bg-card{ background-color: var(--card); }
+  .bg-secondary{ background-color: var(--secondary); }
+  .bg-primary{ background-color: var(--primary); }
+  .bg-primary-10{ background-color: oklch(var(--primary-lch) / 0.1); }
+  .text-primary-70{ color: oklch(var(--primary-lch) / 0.7); }
+  .text-primary-50{ color: oklch(var(--primary-lch) / 0.5); }
+  .border-border{ border-color: var(--border); }
+  .border-primary{ border-color: var(--primary); }
+  .border-primary-30{ border-color: oklch(var(--primary-lch) / 0.3); }
+  .border-primary-40{ border-color: oklch(var(--primary-lch) / 0.4); }
+
+  /* ---- structural components ---- */
+  .card{
+    border:1px solid var(--border);
+    background: var(--card);
+    border-radius: 1.5rem;
+    transition: all .3s ease;
+  }
+  .card:hover{
+    border-color: oklch(var(--primary-lch) / 0.5);
+    transform: translateY(-2px);
+  }
+  .card-glow:hover{
+    box-shadow: 0 0 24px oklch(var(--primary-lch) / 0.2);
+  }
+  /* Цитата: чип + кавычка + тире у автора */
+  blockquote.quote{
+    position: relative;
+    margin-inline: 0;
+    margin-block: 0;
+    width: 100%;
+    max-width: none;
+    padding: 1rem 1.15rem 1.05rem;
+    border: 1px solid var(--border);
+    border-radius: 1.25rem;
+    background: oklch(var(--fg-lch) / 0.045);
+    text-align: start;
+    box-sizing: border-box;
+  }
+  .hero-copy blockquote.quote{
+    margin-block-start: 2.75rem;
+  }
+  @keyframes quoteDrop{
+    from{ opacity:0; transform:translateY(-0.75rem); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+  blockquote.quote:not(.is-in){
+    opacity:0;
+    transform:translateY(-0.75rem);
+  }
+  blockquote.quote.is-in{
+    animation:quoteDrop .55s cubic-bezier(.22,1,.36,1) both;
+  }
+  html.light blockquote.quote{
+    background: oklch(0 0 0 / 0.03);
+  }
+  blockquote.quote::before{
+    content: "«";
+    display: block;
+    color: var(--primary);
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 0.9;
+    margin-bottom: 0.35rem;
+    pointer-events: none;
+  }
+  blockquote.quote p{
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.55;
+    text-wrap: pretty;
+    color: var(--foreground);
+  }
+  blockquote.quote footer{
+    margin-top: 0.75rem;
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    color: var(--muted-foreground);
+    font-style: normal;
+  }
+  blockquote.quote footer::before{
+    content: "—\00a0";
+  }
+  blockquote.quote cite{
+    font-style: normal;
+    font-weight: 500;
+    color: var(--foreground);
+  }
+  .hero-copy{
+    width: 100%;
+    max-width: 72rem;
+    text-align: center;
+  }
+  .hero-copy blockquote.quote{
+    text-align: start;
+  }
+  .hero-copy .t-lead,
+  .hero-copy blockquote.quote{
+    max-width: none;
+    width: 100%;
+  }
+
+  .icon-badge{
+    display:flex; align-items:center; justify-content:center;
+    background: oklch(var(--primary-lch) / 0.1);
+    border-radius: .85rem;
+    color: var(--primary);
+    flex-shrink:0;
+  }
+
+  .photo-placeholder{
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.75rem;
+    border:1px dashed oklch(var(--primary-lch) / 0.4);
+    background: var(--card);
+    border-radius: 1.5rem;
+    color: var(--muted-foreground);
+    transition: border-color .2s ease;
+  }
+  .photo-placeholder:hover{ border-color: oklch(var(--primary-lch) / 0.7); }
+  .photo-placeholder svg{ color: oklch(var(--primary-lch) / 0.5); }
+  .photo-placeholder span{ font-size:.875rem; font-weight:500; color: oklch(var(--primary-lch) / 0.7); }
+
+  /* ---- section backgrounds: flat, theme-aware ---- */
+  .section-wrap{ position:relative; width:100%; overflow:hidden; }
+  .section-bg, .hero-bg, .closing-bg{
+    position:absolute; inset:0; z-index:0;
+    background-color: oklch(var(--scrim-lch));
+  }
+  .overlay-deep{ position:absolute; inset:0; z-index:10; background: oklch(var(--scrim-lch) / 0.72); }
+  .overlay-medium{ position:absolute; inset:0; z-index:10; background: oklch(var(--scrim-lch) / 0.52); }
+  .section-inner{ position:relative; z-index:20; margin:0 auto; max-width:72rem; }
+
+  .hero-overlay{
+    position:absolute; inset:0; z-index:10;
+    background: linear-gradient(to bottom, oklch(var(--scrim-lch) / 0.55), oklch(var(--scrim-lch) / 0.42) 45%, oklch(var(--scrim-lch) / 0.8));
+  }
+  .closing-overlay{ position:absolute; inset:0; z-index:10; background: oklch(var(--scrim-lch) / 0.68); }
+
+  /* Heading with left red rule */
+  .heading-rule{
+    border-left:4px solid var(--primary);
+    padding-left:1.25rem;
+  }
+
+  /* Navbar: стабильный фон, без toggle .scrolled (он давал мерцание blur/тени) */
+  #navbar{
+    position:fixed; top:0; left:0; right:0; z-index:50;
+    background: oklch(var(--scrim-lch) / 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  #scroll-progress{
+    position:absolute; left:0; right:0; bottom:0; height:2px;
+    background: oklch(var(--fg-lch) / 0.08);
+    pointer-events:none;
+  }
+  #scroll-progress > span{
+    display:block; height:100%; width:100%;
+    background: var(--primary);
+    transform: scaleX(0);
+    transform-origin: left center;
+    will-change: transform;
+  }
+  .nav-link{
+    border-radius:.5rem; padding:.5rem .65rem; font-size:.75rem; font-weight:500;
+    color: oklch(var(--fg-lch) / 0.6); transition: color .15s ease; background:transparent; border:none; cursor:pointer;
+    min-height: 44px;
+  }
+  .nav-link:hover{ color: var(--foreground); }
+  .nav-link.active{ color: var(--primary); }
+
+  .burger-line{ height:2px; width:20px; background: oklch(var(--fg-lch) / 0.7); transition: all .2s ease; display:block; }
+
+  .theme-toggle{
+    display:flex; align-items:center; justify-content:center;
+    padding:0; border:none; cursor:pointer; background:transparent;
+    color: var(--foreground);
+  }
+  .theme-toggle-track{
+    position:relative;
+    display:flex; align-items:center; justify-content:space-between;
+    width:3.25rem; height:1.75rem;
+    padding:0 .4rem;
+    border-radius:999px;
+    border:1px solid var(--border);
+    background: oklch(var(--fg-lch) / 0.07);
+    box-sizing:border-box;
+  }
+  .theme-toggle:hover .theme-toggle-track{
+    border-color: oklch(var(--primary-lch) / 0.45);
+  }
+  .theme-toggle-knob{
+    position:absolute; top:2px; left:2px;
+    width:1.4rem; height:1.4rem;
+    border-radius:50%;
+    background: var(--primary);
+    transition: transform .28s cubic-bezier(.22,1,.36,1);
+    pointer-events:none;
+  }
+  html.light .theme-toggle-knob{
+    transform: translateX(1.45rem);
+    background: var(--foreground);
+  }
+  .theme-toggle .icon-sun,
+  .theme-toggle .icon-moon{
+    position:relative; z-index:1;
+    width:12px; height:12px;
+    color: oklch(var(--fg-lch) / 0.4);
+    transition: color .2s ease;
+  }
+  .theme-toggle .icon-moon{ color: oklch(1 0 0 / 0.95); }
+  html.light .theme-toggle .icon-moon{ color: oklch(var(--fg-lch) / 0.4); }
+  html.light .theme-toggle .icon-sun{ color: var(--background); }
+
+  .mobile-menu-panel{ background: oklch(var(--scrim-lch) / 0.97); }
+
+  #mobile-menu{ max-height:0; overflow:hidden; transition: max-height .3s ease; }
+  #mobile-menu.open{ max-height:40rem; border-bottom:1px solid var(--border); }
+
+  details > summary{ list-style:none; cursor:pointer; }
+  details > summary::-webkit-details-marker{ display:none; }
+  details .chevron{ transition: transform .2s ease; }
+  details[open] .chevron{ transform: rotate(180deg); }
+
+  .heading-rule{ max-width: 18em; }
+
+  .theme-toggle, #burger{ min-width:44px; min-height:44px; }
+  @media (min-width: 1280px){
+    .nav-link{ min-height:0; padding:.375rem .55rem; }
+  }
+  @media (hover: none){
+    .card:hover{ transform: none; box-shadow: none; }
+  }
+  @keyframes scrollNudge{
+    0%, 100%{ transform:translateY(0); }
+    50%{ transform:translateY(6px); }
+  }
+  .scroll-hint{
+    display:flex; align-items:center; justify-content:center;
+    min-width:44px; min-height:44px; padding:.5rem 1rem;
+    border:none; background:transparent; cursor:pointer;
+  }
+  .scroll-hint-bar{
+    display:block; width:2.35rem; height:5px;
+    border-radius:999px;
+    background: oklch(var(--fg-lch) / 0.42);
+    animation: scrollNudge 1.8s ease-in-out infinite;
+  }
+  .scroll-hint:hover .scroll-hint-bar{
+    background: oklch(var(--fg-lch) / 0.7);
+  }
+  .site-foot{
+    padding: 1.25rem 1rem 2rem;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    color: oklch(var(--fg-lch) / 0.28);
+  }
+  .site-foot a{ color: inherit; text-decoration: none; }
+  .site-foot a:hover{ color: oklch(var(--fg-lch) / 0.5); }
+  .site-foot span{ margin: 0 0.35rem; }
+</style>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header id="navbar">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+    <button onclick="window.scrollTo({top:0,behavior:'smooth'})" class="flex flex-col items-center gap-0.5 opacity-80 hover:opacity-100 transition-opacity" style="color: var(--logo-color);" aria-label="Наверх, Группа компаний АРКА">
+      <svg viewBox="0 0 500 549.6" class="h-[24px] w-auto" aria-hidden="true"><path d="M 340.37,0.0 L 313.16,7.31 L 304.22,10.97 L 294.88,15.84 L 281.88,25.59 L 268.89,41.43 L 238.42,42.65 L 209.99,70.67 L 209.99,73.11 L 222.58,98.7 L 229.08,118.2 L 231.93,131.6 L 232.74,142.57 L 149.47,143.79 L 121.04,148.66 L 97.08,157.19 L 73.11,170.59 L 61.74,179.12 L 47.52,192.53 L 38.18,203.49 L 26.4,220.55 L 15.84,241.27 L 6.9,266.86 L 2.44,287.57 L 0.41,305.85 L 0.0,325.35 L 2.44,353.37 L 4.87,366.77 L 8.94,382.62 L 18.28,409.42 L 26.81,427.7 L 36.56,444.76 L 48.33,461.82 L 64.58,481.32 L 83.67,499.59 L 101.14,513.0 L 118.6,523.96 L 138.1,533.71 L 158.0,541.02 L 184.4,548.33 L 317.63,548.33 L 352.15,537.37 L 375.71,526.4 L 395.61,514.22 L 410.24,503.25 L 432.58,482.53 L 449.23,463.04 L 464.26,441.1 L 481.72,406.99 L 491.06,380.18 L 497.97,347.28 L 499.59,331.44 L 499.19,297.32 L 494.31,268.07 L 487.0,244.92 L 476.04,221.77 L 460.19,198.62 L 443.95,181.56 L 428.51,169.37 L 407.39,157.19 L 388.71,149.88 L 368.81,145.0 L 346.06,142.57 L 266.45,141.35 L 266.04,140.13 L 263.61,109.67 L 295.29,108.45 L 311.13,104.79 L 324.94,98.7 L 332.25,93.83 L 342.0,85.3 L 348.09,77.99 L 357.43,62.14 L 364.74,41.43 L 368.81,15.84 L 369.21,0.0 L 340.37,0.0 Z M 458.78,288.9 L 459.54,296.55 L 459.66,300.16 L 471.16,300.16 L 471.16,308.29 L 459.66,308.29 L 459.54,311.9 L 458.78,319.55 L 457.53,327.12 L 455.79,334.61 L 453.56,341.96 L 450.85,349.15 L 447.68,356.14 L 444.06,362.92 L 440.01,369.44 L 435.53,375.68 L 430.66,381.62 L 425.41,387.23 L 419.8,392.48 L 413.86,397.35 L 407.62,401.83 L 401.1,405.88 L 394.32,409.5 L 387.33,412.67 L 380.14,415.38 L 372.79,417.61 L 365.31,419.35 L 357.73,420.6 L 350.08,421.36 L 346.47,421.48 L 346.47,432.98 L 338.34,432.98 L 338.34,421.48 L 334.73,421.36 L 327.08,420.6 L 319.5,419.35 L 312.02,417.61 L 304.67,415.38 L 297.48,412.67 L 290.49,409.5 L 283.71,405.88 L 277.19,401.83 L 270.95,397.35 L 265.01,392.48 L 259.4,387.23 L 254.15,381.62 L 249.28,375.68 L 244.8,369.44 L 240.75,362.92 L 237.13,356.14 L 233.96,349.15 L 231.25,341.96 L 229.02,334.61 L 227.28,327.12 L 226.02,319.55 L 225.27,311.9 L 225.15,308.29 L 213.65,308.29 L 213.65,300.16 L 225.15,300.16 L 225.27,296.55 L 226.02,288.9 L 227.28,281.32 L 229.02,273.84 L 231.25,266.49 L 233.96,259.3 L 237.13,252.31 L 240.75,245.53 L 244.8,239.01 L 249.28,232.77 L 254.15,226.83 L 259.4,221.22 L 265.01,215.97 L 270.95,211.1 L 277.19,206.62 L 283.71,202.57 L 290.49,198.95 L 297.48,195.78 L 304.67,193.07 L 312.02,190.84 L 319.5,189.1 L 327.08,187.84 L 334.73,187.09 L 338.34,186.97 L 338.34,175.47 L 346.47,175.47 L 346.47,186.97 L 350.08,187.09 L 357.73,187.84 L 365.31,189.1 L 372.79,190.84 L 380.14,193.07 L 387.33,195.78 L 394.32,198.95 L 401.1,202.57 L 407.62,206.62 L 413.86,211.1 L 419.8,215.97 L 425.41,221.22 L 430.66,226.83 L 435.53,232.77 L 440.01,239.01 L 444.06,245.53 L 447.68,252.31 L 450.85,259.3 L 453.56,266.49 L 455.79,273.84 L 457.53,281.32 L 458.78,288.9 Z M 338.34,237.34 L 338.34,212.56 L 336.4,212.63 L 330.42,213.21 L 324.5,214.19 L 318.65,215.56 L 312.9,217.3 L 307.28,219.42 L 301.8,221.9 L 296.51,224.73 L 291.41,227.9 L 286.52,231.4 L 281.88,235.21 L 277.5,239.32 L 273.39,243.7 L 269.58,248.34 L 266.08,253.23 L 262.91,258.33 L 260.08,263.62 L 257.6,269.1 L 255.48,274.72 L 253.74,280.47 L 252.37,286.32 L 251.39,292.24 L 250.81,298.22 L 250.74,300.16 L 275.52,300.16 L 275.53,299.84 L 275.96,295.48 L 276.67,291.15 L 277.67,286.88 L 278.94,282.68 L 280.49,278.58 L 282.3,274.58 L 284.36,270.71 L 286.68,266.99 L 289.24,263.43 L 292.02,260.04 L 295.02,256.83 L 298.22,253.84 L 301.61,251.05 L 305.17,248.5 L 308.9,246.18 L 312.76,244.12 L 316.76,242.31 L 320.86,240.76 L 325.06,239.49 L 329.33,238.49 L 333.66,237.78 L 338.02,237.35 L 338.34,237.34 Z M 408.85,295.48 L 409.28,299.84 L 409.29,300.16 L 434.07,300.16 L 434.0,298.22 L 433.41,292.24 L 432.44,286.32 L 431.07,280.47 L 429.33,274.72 L 427.21,269.1 L 424.73,263.62 L 421.9,258.33 L 418.73,253.23 L 415.23,248.34 L 411.42,243.7 L 407.31,239.32 L 402.93,235.21 L 398.29,231.4 L 393.4,227.9 L 388.3,224.73 L 383.0,221.9 L 377.53,219.42 L 371.91,217.3 L 366.16,215.56 L 360.31,214.19 L 354.39,213.21 L 348.41,212.63 L 346.47,212.56 L 346.47,237.34 L 346.79,237.35 L 351.15,237.78 L 355.48,238.49 L 359.75,239.49 L 363.95,240.76 L 368.05,242.31 L 372.05,244.12 L 375.91,246.18 L 379.64,248.5 L 383.2,251.05 L 386.59,253.84 L 389.79,256.83 L 392.79,260.04 L 395.57,263.43 L 398.13,266.99 L 400.44,270.71 L 402.51,274.58 L 404.32,278.58 L 405.87,282.68 L 407.14,286.88 L 408.14,291.15 L 408.85,295.48 Z M 275.52,308.29 L 250.74,308.29 L 250.81,310.23 L 251.39,316.21 L 252.37,322.13 L 253.74,327.98 L 255.48,333.73 L 257.6,339.35 L 260.08,344.82 L 262.91,350.12 L 266.08,355.22 L 269.58,360.11 L 273.39,364.75 L 277.5,369.13 L 281.88,373.24 L 286.52,377.05 L 291.41,380.55 L 296.51,383.72 L 301.8,386.55 L 307.28,389.03 L 312.9,391.15 L 318.65,392.89 L 324.5,394.26 L 330.42,395.23 L 336.4,395.82 L 338.34,395.89 L 338.34,371.11 L 338.02,371.1 L 333.66,370.67 L 329.33,369.96 L 325.06,368.96 L 320.86,367.69 L 316.76,366.14 L 312.76,364.33 L 308.9,362.26 L 305.17,359.95 L 301.61,357.39 L 298.22,354.61 L 295.02,351.61 L 292.02,348.41 L 289.24,345.02 L 286.68,341.46 L 284.36,337.73 L 282.3,333.87 L 280.49,329.87 L 278.94,325.77 L 277.67,321.57 L 276.67,317.3 L 275.96,312.97 L 275.53,308.61 L 275.52,308.29 Z M 346.47,371.11 L 346.47,395.89 L 348.41,395.82 L 354.39,395.23 L 360.31,394.26 L 366.16,392.89 L 371.91,391.15 L 377.53,389.03 L 383.0,386.55 L 388.3,383.72 L 393.4,380.55 L 398.29,377.05 L 402.93,373.24 L 407.31,369.13 L 411.42,364.75 L 415.23,360.11 L 418.73,355.22 L 421.9,350.12 L 424.73,344.82 L 427.21,339.35 L 429.33,333.73 L 431.07,327.98 L 432.44,322.13 L 433.41,316.21 L 434.0,310.23 L 434.07,308.29 L 409.29,308.29 L 409.28,308.61 L 408.85,312.97 L 408.14,317.3 L 407.14,321.57 L 405.87,325.77 L 404.32,329.87 L 402.51,333.87 L 400.44,337.73 L 398.13,341.46 L 395.57,345.02 L 392.79,348.41 L 389.79,351.61 L 386.59,354.61 L 383.2,357.39 L 379.64,359.95 L 375.91,362.26 L 372.05,364.33 L 368.05,366.14 L 363.95,367.69 L 359.75,368.96 L 355.48,369.96 L 351.15,370.67 L 346.79,371.1 L 346.47,371.11 Z M 383.48,309.63 L 383.61,308.29 L 346.47,308.29 L 346.47,345.43 L 347.81,345.3 L 350.49,344.86 L 353.13,344.24 L 355.72,343.46 L 358.26,342.5 L 360.73,341.38 L 363.12,340.1 L 365.42,338.67 L 367.63,337.09 L 369.72,335.37 L 371.7,333.52 L 373.55,331.54 L 375.27,329.45 L 376.85,327.24 L 378.28,324.94 L 379.56,322.55 L 380.68,320.08 L 381.64,317.54 L 382.42,314.95 L 383.04,312.31 L 383.48,309.63 Z M 338.34,345.43 L 338.34,308.29 L 301.2,308.29 L 301.33,309.63 L 301.77,312.31 L 302.39,314.95 L 303.17,317.54 L 304.13,320.08 L 305.25,322.55 L 306.53,324.94 L 307.96,327.24 L 309.54,329.45 L 311.26,331.54 L 313.11,333.52 L 315.09,335.37 L 317.18,337.09 L 319.39,338.67 L 321.69,340.1 L 324.08,341.38 L 326.55,342.5 L 329.09,343.46 L 331.68,344.24 L 334.32,344.86 L 337.0,345.3 L 338.34,345.43 Z M 346.47,263.02 L 346.47,300.16 L 383.61,300.16 L 383.48,298.82 L 383.04,296.14 L 382.42,293.5 L 381.64,290.91 L 380.68,288.37 L 379.56,285.9 L 378.28,283.51 L 376.85,281.21 L 375.27,279.0 L 373.55,276.91 L 371.7,274.93 L 369.72,273.08 L 367.63,271.36 L 365.42,269.78 L 363.12,268.35 L 360.73,267.07 L 358.26,265.95 L 355.72,264.99 L 353.13,264.21 L 350.49,263.59 L 347.81,263.15 L 346.47,263.02 Z M 301.2,300.16 L 338.34,300.16 L 338.34,263.02 L 337.0,263.15 L 334.32,263.59 L 331.68,264.21 L 329.09,264.99 L 326.55,265.95 L 324.08,267.07 L 321.69,268.35 L 319.39,269.78 L 317.18,271.36 L 315.09,273.08 L 313.11,274.93 L 311.26,276.91 L 309.54,279.0 L 307.96,281.21 L 306.53,283.51 L 305.25,285.9 L 304.13,288.37 L 303.17,290.91 L 302.39,293.5 L 301.77,296.14 L 301.33,298.82 L 301.2,300.16 Z" fill="currentColor" fill-rule="evenodd"/></svg>
+      <span class="text-[11px] font-medium tracking-wide opacity-75 leading-none whitespace-nowrap">Value ARKA consulting</span>
+    </button>
+
+    <nav class="hidden items-center gap-0.5 xl:flex">
+      <button class="nav-link" data-href="#ranking">Экспертиза</button>
+      <button class="nav-link" data-href="#cases">Кейсы</button>
+      <button class="nav-link" data-href="#learning">Обучение</button>
+      <button class="nav-link" data-href="#values">Ценности</button>
+      <button class="nav-link" data-href="#grades">Грейды</button>
+      <button class="nav-link" data-href="#office">Офис</button>
+      <button class="nav-link" data-href="#atmosphere">Атмосфера</button>
+      <button class="nav-link" data-href="#benefits">Бенефиты</button>
+      <button class="nav-link" data-href="#events">Мероприятия</button>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <button id="theme-toggle" class="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Тема: тёмная">
+        <span class="theme-toggle-track" aria-hidden="true">
+          <span class="theme-toggle-knob"></span>
+          <i data-lucide="moon" class="icon-moon"></i>
+          <i data-lucide="sun" class="icon-sun"></i>
+        </span>
+      </button>
+      <button id="burger" class="flex flex-col gap-1.5 p-2 xl:hidden" aria-label="Меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="xl:hidden">
+    <nav class="mobile-menu-panel flex flex-col px-4 pb-4 pt-1 backdrop-blur-md">
+      <button class="nav-link text-left !text-sm py-2.5" data-href="#ranking">Экспертиза</button>
+      <button class="nav-link text-left !text-sm py-2.5" data-href="#cases">Кейсы</button>
+      <button class="nav-link text-left !text-sm py-2.5" data-href="#learning">Обучение</button>
+      <button class="nav-link text-left !text-sm py-2.5" data-href="#values">Ценности</button>
+      <button class="nav-link text-left !text-sm py-2.5" data-href="#grades">Грейды</button>
+      <button class="nav-link text-left !text-sm py-2.5" data-href="#office">Офис</button>
+      <button class="nav-link text-left !text-sm py-2.5" data-href="#atmosphere">Атмосфера</button>
+      <button class="nav-link text-left !text-sm py-2.5" data-href="#benefits">Бенефиты</button>
+      <button class="nav-link text-left !text-sm py-2.5" data-href="#events">Мероприятия</button>
+    </nav>
+  </div>
+  <div id="scroll-progress" aria-hidden="true"><span></span></div>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="relative hero-screen w-full overflow-hidden">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-pad relative z-20 flex hero-screen flex-col px-4 pb-16 pt-24 sm:px-6 lg:px-8">
+    <div class="hero-copy mx-auto flex w-full flex-1 flex-col justify-center">
+      <h1 class="t-display text-fg">
+        Группа компаний АРКА
+      </h1>
+      <p class="t-lead mt-6 font-medium text-fg-75">
+        Оценка бизнеса и активов, стоимостной и финансовый консалтинг, отраслевая аналитика, полный комплекс услуг по интеллектуальной собственности
+      </p>
+      <p class="t-lead mt-4 font-semibold text-primary">
+        Работать у нас — это экспертная свобода, прозрачный рост и сильная команда
+      </p>
+      <blockquote class="quote">
+        <p class="text-lg font-medium leading-relaxed text-fg">Невозможное возможно — это не просто слова. Это наш подход к любой задаче. Это вера в команду и готовность искать и находить решения.</p>
+        <footer>Ксения, управляющий партнёр</footer>
+      </blockquote>
+    </div>
+    <div class="flex justify-center pb-2">
+      <button type="button" class="scroll-hint" onclick="document.querySelector('#ranking').scrollIntoView({behavior:'smooth'})" aria-label="Листайте вниз">
+        <span class="scroll-hint-bar" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RANKING (deep) ================= -->
+<section id="ranking" class="section-wrap px-4 py-16 sm:px-6 lg:px-8">
+  <div class="section-bg"></div>
+  <div class="overlay-deep"></div>
+  <div class="section-inner">
+    <div class="mb-10">
+      <h2 class="heading-rule t-h2 text-fg">Признанная экспертиза</h2>
+    </div>
+    <p class="t-lead mb-8 text-fg-80">
+      У Группы компаний АРКА большой опыт и наработанная экспертиза в оценке интеллектуалоёмких компаний (IT, технологический сектор). По итогам 2025 года результаты подтверждены независимым рэнкингом RAEX.
+    </p>
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+      <div class="card card-glow p-5 sm:p-8">
+        <div class="mb-3 text-7xl font-bold text-primary num">7</div>
+        <div class="mb-2 text-sm font-semibold uppercase tracking-widest text-muted">место</div>
+        <p class="text-base text-fg-80 leading-relaxed">В области оценки нематериальных активов и интеллектуальной собственности</p>
+      </div>
+      <div class="card card-glow p-5 sm:p-8">
+        <div class="mb-3 text-7xl font-bold text-primary num">21</div>
+        <div class="mb-2 text-sm font-semibold uppercase tracking-widest text-muted">место</div>
+        <p class="text-base text-fg-80 leading-relaxed">В области оценки бизнеса и ценных бумаг</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CASES (medium) ================= -->
+<section id="cases" class="section-wrap px-4 py-16 sm:px-6 lg:px-8">
+  <div class="section-bg"></div>
+  <div class="overlay-medium"></div>
+  <div class="section-inner">
+    <div class="mb-10">
+      <h2 class="heading-rule t-h2 text-fg">Кейсы, после которых растёшь как эксперт</h2>
+      <p class="mt-3 text-base text-fg-80 leading-relaxed max-w-3xl">Мы обещаем задачи, которые делают тебя профессионально сильнее.</p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
+      <article class="card card-glow p-6">
+        <h3 class="text-base font-bold text-primary leading-snug mb-3">Серия проектов по оценке интеллектуальной собственности российского разработчика и производителя двигателей для авиации</h3>
+        <p class="text-sm text-fg-80 leading-relaxed">Масштабный проект по оценке интеллектуальной собственности, объединивший право, экономику, технологии и глубокий анализ рынка. Разработаны индивидуальные методики: от капитализации затрат на НИОКР при формировании НМА до принципов учёта коэффициента оригинальности конструкторской документации.</p>
+        <p class="mt-4 text-xs text-muted">Дарья, главный оценщик</p>
+      </article>
+      <article class="card card-glow p-6">
+        <h3 class="text-base font-bold text-primary leading-snug mb-3">Оценка иностранных бирж</h3>
+        <p class="text-sm text-fg-80 leading-relaxed">В случае с фондовой биржей была предоставлена модель Заказчика для реализации дисконтированного денежного потока, но она требовала корректировки и доработки способов прогнозирования объёма торгов и выручки.</p>
+        <p class="mt-2 text-sm text-fg-80 leading-relaxed">Для оценки торговой биржи модель Заказчика отсутствовала, исходная информация — только открытые данные и отчётность по МСФО. Расчёт построен с нуля на основе публичных источников.</p>
+        <p class="mt-4 text-xs text-muted">Оксана, главный оценщик</p>
+      </article>
+      <article class="card card-glow p-6">
+        <h3 class="text-base font-bold text-primary leading-snug mb-3">Оценка группы компаний — разработчиков TMS</h3>
+        <p class="mb-3 text-xs text-muted leading-relaxed">TMS — Transportation Management System: ПО для автоматизации и оптимизации грузоперевозок</p>
+        <p class="text-sm text-fg-80 leading-relaxed">Погрузились в аналитику международного и отечественного рынка TMS, подготовили конкурентный анализ, чтобы построить прогноз деятельности для определения стоимости.</p>
+        <p class="mt-4 text-xs text-muted">Елена, главный оценщик</p>
+      </article>
+      <article class="card card-glow p-6">
+        <h3 class="text-base font-bold text-primary leading-snug mb-3">Товарный знак сети кофеен</h3>
+        <p class="text-sm text-fg-80 leading-relaxed">В рамках проекта разработан подход к определению срока экономической жизни бренда. Решение было найдено самостоятельно, а позже аналогичная логика была представлена ведущим экспертом отрасли на профессиональном вебинаре — подтверждение того, что команда движется в русле передовой практики.</p>
+        <p class="mt-4 text-xs text-muted">Дарья, главный оценщик</p>
+      </article>
+      <article class="card card-glow p-6">
+        <h3 class="text-base font-bold text-primary leading-snug mb-3">Анализ рынка облачных технологий</h3>
+        <p class="text-sm text-fg-80 leading-relaxed">Подготовка глубокого отраслевого исследования. Междисциплинарная задача, требующая нестандартного мышления.</p>
+        <p class="mt-4 text-xs text-muted">Валерия, старший оценщик</p>
+      </article>
+      <article class="card card-glow p-6">
+        <h3 class="text-base font-bold text-primary leading-snug mb-3">Оценка имущества инвестиционного товарищества</h3>
+        <p class="text-sm text-fg-80 leading-relaxed">Первый опыт для сотрудника. Новая методология, высокая ответственность. Команда поддержала, итог — качественный результат.</p>
+        <p class="mt-4 text-xs text-muted">Ольга, старший оценщик</p>
+      </article>
+    </div>
+
+    <div class="mt-8">
+      <blockquote class="quote">
+        <p class="text-lg font-medium leading-relaxed text-fg">Ты никогда не вернёшься к расчёту стоимости вновь образованной компании в рамках МЧА после того, как хотя бы раз посчитал бизнес доходным подходом</p>
+        <footer>Валерия, старший оценщик</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LEARNING (deep) ================= -->
+<section id="learning" class="section-wrap px-4 py-16 sm:px-6 lg:px-8">
+  <div class="section-bg"></div>
+  <div class="overlay-deep"></div>
+  <div class="section-inner">
+    <div class="mb-10">
+      <h2 class="heading-rule t-h2 text-fg">Непрерывное совершенствование</h2>
+      <p class="t-lead mt-3 text-fg-80">Внутренняя база знаний, экспертные обсуждения, лекции для практикантов — часть нашей культуры роста.</p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+      <blockquote class="quote">
+        <p class="text-base font-medium leading-relaxed text-fg">Постоянно нахожусь в процессе изучения нового — методик, подходов, нюансов. Компания ставит задачи, которые развивают.</p>
+        <footer>Ольга, старший оценщик</footer>
+      </blockquote>
+      <blockquote class="quote">
+        <p class="text-base font-medium leading-relaxed text-fg">Систематизируем процессы найма и адаптации. Внедряем ежегодные перфоманс-ревью. Тестируем формат наставничества.</p>
+        <footer>Елена, генеральный директор ООО «1 АРКА Консалтинг»</footer>
+      </blockquote>
+    </div>
+
+    <div class="mt-8 rounded-3xl border border-primary-30 bg-card p-5 sm:p-8">
+      <h3 class="mb-2 text-xl font-bold text-fg">Инвестиции в развитие сотрудников</h3>
+      <p class="mb-1 text-base text-fg-80">Прокачиваем экспертные и управленческие навыки сотрудников.</p>
+      <p class="mb-6 text-base text-fg-80">Только за последние 2 года потрачено <span class="text-xl font-bold text-primary num">более 250 000 ₽</span> из бюджета компании.</p>
+
+      <div class="divide-y divide-[color:var(--border)]">
+        <div class="flex flex-col justify-between gap-1 py-3 sm:flex-row sm:items-baseline sm:gap-4">
+          <div class="shrink-0"><span class="text-sm font-semibold text-fg">Анастасия</span><span class="ml-1.5 text-xs text-muted">ассистент оценщика</span></div>
+          <span class="text-sm text-muted sm:text-right">ДПО «Оценочная деятельность», <span class="font-medium text-fg-60">2025–2026</span></span>
+        </div>
+        <div class="flex flex-col justify-between gap-1 py-3 sm:flex-row sm:items-baseline sm:gap-4">
+          <div class="shrink-0"><span class="text-sm font-semibold text-fg">Ксения</span><span class="ml-1.5 text-xs text-muted">главный оценщик</span></div>
+          <span class="text-sm text-muted sm:text-right">Повышение квалификации «Оценка бизнеса и нематериальных активов», <span class="font-medium text-fg-60">2025</span></span>
+        </div>
+        <div class="flex flex-col justify-between gap-1 py-3 sm:flex-row sm:items-baseline sm:gap-4">
+          <div class="shrink-0"><span class="text-sm font-semibold text-fg">Дарья</span><span class="ml-1.5 text-xs text-muted">главный оценщик</span></div>
+          <span class="text-sm text-muted sm:text-right">Повышение квалификации «Оценка бизнеса и нематериальных активов», <span class="font-medium text-fg-60">2025</span></span>
+        </div>
+        <div class="flex flex-col justify-between gap-1 py-3 sm:flex-row sm:items-baseline sm:gap-4">
+          <div class="shrink-0"><span class="text-sm font-semibold text-fg">Орхан</span><span class="ml-1.5 text-xs text-muted">оценщик</span></div>
+          <span class="text-sm text-muted sm:text-right">Повышение квалификации «Оценка бизнеса и нематериальных активов», <span class="font-medium text-fg-60">2025</span></span>
+        </div>
+        <div class="flex flex-col justify-between gap-1 py-3 sm:flex-row sm:items-baseline sm:gap-4">
+          <div class="shrink-0"><span class="text-sm font-semibold text-fg">Виктория</span><span class="ml-1.5 text-xs text-muted">оценщик</span></div>
+          <span class="text-sm text-muted sm:text-right">Повышение квалификации «Оценка бизнеса и нематериальных активов», <span class="font-medium text-fg-60">2025</span></span>
+        </div>
+        <div class="flex flex-col justify-between gap-1 py-3 sm:flex-row sm:items-baseline sm:gap-4">
+          <div class="shrink-0"><span class="text-sm font-semibold text-fg">Валерия</span><span class="ml-1.5 text-xs text-muted">старший оценщик</span></div>
+          <span class="text-sm text-muted sm:text-right">Курс «Разработка портфеля документов для правовой охраны секретов производства (ноу-хау) компании под ключ», <span class="font-medium text-fg-60">2025</span></span>
+        </div>
+        <div class="flex flex-col justify-between gap-1 py-3 sm:flex-row sm:items-baseline sm:gap-4">
+          <div class="shrink-0"><span class="text-sm font-semibold text-fg">Оксана</span><span class="ml-1.5 text-xs text-muted">главный оценщик</span></div>
+          <span class="text-sm text-muted sm:text-right">Повышение квалификации «Экспертиза (проверка) отчетов об оценке», <span class="font-medium text-fg-60">2024</span></span>
+        </div>
+        <div class="flex flex-col justify-between gap-1 py-3 sm:flex-row sm:items-baseline sm:gap-4">
+          <div class="shrink-0"><span class="text-sm font-semibold text-fg">Елена</span><span class="ml-1.5 text-xs text-muted">главный оценщик</span></div>
+          <span class="text-sm text-muted sm:text-right">Курс «Основы управления проектами», <span class="font-medium text-fg-60">2024</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VALUES (medium) ================= -->
+<section id="values" class="section-wrap px-4 py-16 sm:px-6 lg:px-8">
+  <div class="section-bg"></div>
+  <div class="overlay-medium"></div>
+  <div class="section-inner">
+    <div class="mb-10">
+      <h2 class="heading-rule t-h2 text-fg">Наши ценности в действии</h2>
+    </div>
+    <div class="grid grid-cols-1 gap-5 md:grid-cols-3">
+      <div class="card flex flex-col gap-4 p-6">
+        <div class="icon-badge size-12"><i data-lucide="target" class="size-6"></i></div>
+        <h3 class="text-base font-bold text-fg">Ответственность и вовлечённость</h3>
+        <p class="text-sm text-fg-75 leading-relaxed flex-1">Мы тщательно подходим к задачам, не ограничиваясь формальным ТЗ, и готовы отстаивать результаты там, где это необходимо.</p>
+      </div>
+      <div class="card flex flex-col gap-4 p-6">
+        <div class="icon-badge size-12"><i data-lucide="search" class="size-6"></i></div>
+        <h3 class="text-base font-bold text-fg">Объективность и глубокий анализ</h3>
+        <p class="text-sm text-fg-75 leading-relaxed flex-1">Работаем для объективного результата, обеспечивая высокий уровень безопасности и устойчивости решений.</p>
+      </div>
+      <div class="card flex flex-col gap-4 p-6">
+        <div class="icon-badge size-12"><i data-lucide="users" class="size-6"></i></div>
+        <h3 class="text-base font-bold text-fg">Ценно мнение каждого</h3>
+        <p class="text-sm text-fg-75 leading-relaxed flex-1">Открытая атмосфера, в которой важна инициатива и вдумчивость.</p>
+      </div>
+    </div>
+
+    <div class="mt-6">
+      <blockquote class="quote">
+        <p class="text-lg font-medium leading-relaxed text-fg">Воспринимаю нашу команду как небольшой научно-исследовательский центр, где каждый сотрудник — не просто исполнитель, а разработчик, исследователь. Мы исследуем, спорим, проверяем гипотезы и создаем решения, которых до нас, возможно, просто не существовало.</p>
+        <footer>Дарья, генеральный директор ООО «АРКА»</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GRADES (deep) ================= -->
+<section id="grades" class="section-wrap px-4 py-16 sm:px-6 lg:px-8">
+  <div class="section-bg"></div>
+  <div class="overlay-deep"></div>
+  <div class="section-inner">
+    <div class="mb-10">
+      <h2 class="heading-rule t-h2 text-fg">Прозрачная система грейдов</h2>
+      <p class="mt-3 text-base text-fg-80 leading-relaxed max-w-3xl">Рост зарплатного тарифа при переходе между грейдами, без учёта бонусов и индексации.</p>
+    </div>
+
+    <!-- Desktop chain + table -->
+    <div class="hidden lg:block">
+      <div class="mb-10" style="display:grid; grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr auto 1fr auto 1fr; align-items:center; gap:2px;">
+        <div class="flex flex-col items-center justify-center rounded-2xl border-2 border-[color:oklch(0.92_0.006_80_/_0.25)] bg-card px-3 py-3 text-center">
+          <span class="text-sm font-semibold leading-snug text-fg-90">Ассистент</span>
+        </div>
+        <div class="flex items-center justify-center px-1">
+          <span class="rounded-full px-2 py-0.5 text-base font-bold text-primary">+15%</span>
+        </div>
+        <div class="flex flex-col items-center justify-center rounded-2xl border-2 border-[color:oklch(0.92_0.006_80_/_0.25)] bg-card px-3 py-3 text-center">
+          <span class="text-sm font-semibold leading-snug text-fg-90">Аналитик</span>
+        </div>
+        <div class="flex items-center justify-center px-1">
+          <span class="rounded-full px-2 py-0.5 text-base font-bold text-primary">+15%</span>
+        </div>
+        <div class="flex flex-col items-center justify-center rounded-2xl border-2 border-[color:oklch(0.92_0.006_80_/_0.25)] bg-card px-3 py-3 text-center">
+          <span class="text-sm font-semibold leading-snug text-fg-90">Оценщик</span>
+          <span class="text-sm font-semibold leading-snug text-fg-90">без подписи</span>
+        </div>
+        <div class="flex items-center justify-center px-1">
+          <span class="rounded-full border-2 border-primary px-2 py-0.5 text-lg font-bold text-primary">+30%</span>
+        </div>
+        <div class="flex flex-col items-center justify-center rounded-2xl border-2 border-[color:oklch(0.92_0.006_80_/_0.25)] bg-card px-3 py-3 text-center">
+          <span class="text-sm font-semibold leading-snug text-fg-90">Оценщик</span>
+          <span class="text-sm font-semibold leading-snug text-fg-90">с подписью</span>
+        </div>
+        <div class="flex items-center justify-center px-1">
+          <span class="rounded-full px-2 py-0.5 text-base font-bold text-primary">+20%</span>
+        </div>
+        <div class="flex flex-col items-center justify-center rounded-2xl border-2 border-[color:oklch(0.92_0.006_80_/_0.25)] bg-card px-3 py-3 text-center">
+          <span class="text-sm font-semibold leading-snug text-fg-90">Старший</span>
+          <span class="text-sm font-semibold leading-snug text-fg-90">оценщик</span>
+        </div>
+        <div class="flex items-center justify-center px-1">
+          <span class="rounded-full px-2 py-0.5 text-base font-bold text-primary">+20%</span>
+        </div>
+        <div class="flex flex-col items-center justify-center rounded-2xl border-2 border-[color:oklch(0.92_0.006_80_/_0.25)] bg-card px-3 py-3 text-center">
+          <span class="text-sm font-semibold leading-snug text-fg-90">Главный</span>
+          <span class="text-sm font-semibold leading-snug text-fg-90">оценщик</span>
+        </div>
+      </div>
+
+      <div class="mb-10 mt-14"><h3 class="text-xl font-bold text-fg">Понятные критерии повышения грейда</h3></div>
+      <div class="relative rounded-3xl border border-border">
+      <div class="overflow-x-auto rounded-3xl">
+        <table class="w-full min-w-[900px] text-sm border-collapse table-fixed">
+          <colgroup>
+            <col style="width:150px" />
+            <col /><col /><col /><col /><col /><col />
+          </colgroup>
+          <thead>
+            <tr class="border-b border-border bg-secondary">
+              <th class="py-4 pl-5 pr-3 text-left text-xs font-semibold uppercase tracking-wide text-primary">Критерии</th>
+              <th class="px-3 py-4 text-center text-xs font-semibold uppercase tracking-wide text-primary">Ассистент</th>
+              <th class="px-3 py-4 text-center text-xs font-semibold uppercase tracking-wide text-primary">Аналитик</th>
+              <th class="px-3 py-4 text-center text-xs font-semibold uppercase tracking-wide text-primary">Оценщик без подписи</th>
+              <th class="px-3 py-4 text-center text-xs font-semibold uppercase tracking-wide text-primary">Оценщик с подписью</th>
+              <th class="px-3 py-4 text-center text-xs font-semibold uppercase tracking-wide text-primary">Старший оценщик</th>
+              <th class="px-3 py-4 text-center text-xs font-semibold uppercase tracking-wide text-primary">Главный оценщик</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-border bg-card">
+              <td class="py-4 pl-5 pr-3 text-xs font-semibold text-fg-90">Опыт работы</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Без опыта</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Более 1 года</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Более 2 лет</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Более 2 лет</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Более 3 лет</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Более 5 лет</td>
+            </tr>
+            <tr class="border-b border-border" style="background: var(--background);">
+              <td class="py-4 pl-5 pr-3 text-xs font-semibold text-fg-90">Проф. образование</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">В процессе</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Да</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Да</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Да</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Да</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Да</td>
+            </tr>
+            <tr class="border-b border-border bg-card">
+              <td class="py-4 pl-5 pr-3 text-xs font-semibold text-fg-90">Членство в СРО</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">—</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">—</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">—</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Да</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Да</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Да</td>
+            </tr>
+            <tr class="border-b border-border" style="background: var(--background);">
+              <td class="py-4 pl-5 pr-3 text-xs font-semibold text-fg-90">Квал. аттестат</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">—</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">—</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">—</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Мин. 1</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Мин. 1</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Мин. 1</td>
+            </tr>
+            <tr class="last:border-0 bg-card">
+              <td class="py-4 pl-5 pr-3 text-xs font-semibold text-fg-90">Функции</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Вспомогательные работы, отдельные задачи</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Исполнение работ 1 кат.</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Исполнение 1–2 кат., контроль 1 кат.</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Исполнение 1–2 кат., контроль 1 кат.</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Исполнение 1–3 кат., контроль 1–2 кат.</td>
+              <td class="px-3 py-4 text-center text-xs leading-relaxed text-fg-70">Исполнение 1–3 кат., контроль 1–3 кат., организация работы</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pointer-events-none absolute inset-y-0 right-0 w-12 rounded-r-3xl" style="background: linear-gradient(to right, transparent, var(--card));"></div>
+      </div>
+    </div>
+
+    <!-- Mobile accordion -->
+    <div class="flex flex-col gap-3 lg:hidden">
+      <details class="rounded-2xl border-2 border-[color:oklch(0.92_0.006_80_/_0.2)] bg-card overflow-hidden">
+        <summary class="flex w-full items-center justify-between px-5 py-4">
+          <span class="flex items-center gap-3">
+            <span class="flex size-7 items-center justify-center rounded-full bg-primary-10 text-xs font-bold text-primary">1</span>
+            <span class="text-sm font-semibold text-fg">Ассистент</span>
+            <span class="rounded-full px-2 py-0.5 text-xs font-bold text-primary">+15%</span>
+          </span>
+          <i data-lucide="chevron-down" class="chevron size-4 text-muted"></i>
+        </summary>
+        <div class="divide-y divide-[color:var(--border)] border-t border-border px-5 pb-4">
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Опыт работы</p><p class="text-sm text-fg-75">Без опыта</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Проф. образование</p><p class="text-sm text-fg-75">В процессе</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Членство в СРО</p><p class="text-sm text-fg-75">—</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Квал. аттестат</p><p class="text-sm text-fg-75">—</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Функции</p><p class="text-sm text-fg-75">Вспомогательные работы, отдельные задачи</p></div>
+        </div>
+      </details>
+      <details class="rounded-2xl border-2 border-[color:oklch(0.92_0.006_80_/_0.2)] bg-card overflow-hidden">
+        <summary class="flex w-full items-center justify-between px-5 py-4">
+          <span class="flex items-center gap-3">
+            <span class="flex size-7 items-center justify-center rounded-full bg-primary-10 text-xs font-bold text-primary">2</span>
+            <span class="text-sm font-semibold text-fg">Аналитик</span>
+            <span class="rounded-full px-2 py-0.5 text-xs font-bold text-primary">+15%</span>
+          </span>
+          <i data-lucide="chevron-down" class="chevron size-4 text-muted"></i>
+        </summary>
+        <div class="divide-y divide-[color:var(--border)] border-t border-border px-5 pb-4">
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Опыт работы</p><p class="text-sm text-fg-75">Более 1 года</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Проф. образование</p><p class="text-sm text-fg-75">Да</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Членство в СРО</p><p class="text-sm text-fg-75">—</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Квал. аттестат</p><p class="text-sm text-fg-75">—</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Функции</p><p class="text-sm text-fg-75">Исполнение работ 1 кат.</p></div>
+        </div>
+      </details>
+      <details class="rounded-2xl border-2 border-[color:oklch(0.92_0.006_80_/_0.25)] bg-card overflow-hidden">
+        <summary class="flex w-full items-center justify-between px-5 py-4">
+          <span class="flex items-center gap-3">
+            <span class="flex size-7 items-center justify-center rounded-full bg-primary-10 text-xs font-bold text-primary">3</span>
+            <span class="text-sm font-semibold text-fg">Оценщик без подписи</span>
+            <span class="rounded-full border border-primary px-2 py-0.5 text-xs font-bold text-primary">+30%</span>
+          </span>
+          <i data-lucide="chevron-down" class="chevron size-4 text-muted"></i>
+        </summary>
+        <div class="divide-y divide-[color:var(--border)] border-t border-border px-5 pb-4">
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Опыт работы</p><p class="text-sm text-fg-75">Более 2 лет</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Проф. образование</p><p class="text-sm text-fg-75">Да</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Членство в СРО</p><p class="text-sm text-fg-75">—</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Квал. аттестат</p><p class="text-sm text-fg-75">—</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Функции</p><p class="text-sm text-fg-75">Исполнение 1–2 кат., контроль 1 кат.</p></div>
+        </div>
+      </details>
+      <details class="rounded-2xl border-2 border-[color:oklch(0.92_0.006_80_/_0.2)] bg-card overflow-hidden">
+        <summary class="flex w-full items-center justify-between px-5 py-4">
+          <span class="flex items-center gap-3">
+            <span class="flex size-7 items-center justify-center rounded-full bg-primary-10 text-xs font-bold text-primary">4</span>
+            <span class="text-sm font-semibold text-fg">Оценщик с подписью</span>
+            <span class="rounded-full px-2 py-0.5 text-xs font-bold text-primary">+20%</span>
+          </span>
+          <i data-lucide="chevron-down" class="chevron size-4 text-muted"></i>
+        </summary>
+        <div class="divide-y divide-[color:var(--border)] border-t border-border px-5 pb-4">
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Опыт работы</p><p class="text-sm text-fg-75">Более 2 лет</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Проф. образование</p><p class="text-sm text-fg-75">Да</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Членство в СРО</p><p class="text-sm text-fg-75">Да</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Квал. аттестат</p><p class="text-sm text-fg-75">Мин. 1</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Функции</p><p class="text-sm text-fg-75">Исполнение 1–2 кат., контроль 1 кат.</p></div>
+        </div>
+      </details>
+      <details class="rounded-2xl border-2 border-[color:oklch(0.92_0.006_80_/_0.2)] bg-card overflow-hidden">
+        <summary class="flex w-full items-center justify-between px-5 py-4">
+          <span class="flex items-center gap-3">
+            <span class="flex size-7 items-center justify-center rounded-full bg-primary-10 text-xs font-bold text-primary">5</span>
+            <span class="text-sm font-semibold text-fg">Старший оценщик</span>
+            <span class="rounded-full px-2 py-0.5 text-xs font-bold text-primary">+20%</span>
+          </span>
+          <i data-lucide="chevron-down" class="chevron size-4 text-muted"></i>
+        </summary>
+        <div class="divide-y divide-[color:var(--border)] border-t border-border px-5 pb-4">
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Опыт работы</p><p class="text-sm text-fg-75">Более 3 лет</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Проф. образование</p><p class="text-sm text-fg-75">Да</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Членство в СРО</p><p class="text-sm text-fg-75">Да</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Квал. аттестат</p><p class="text-sm text-fg-75">Мин. 1</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Функции</p><p class="text-sm text-fg-75">Исполнение 1–3 кат., контроль 1–2 кат.</p></div>
+        </div>
+      </details>
+      <details class="rounded-2xl border-2 border-[color:oklch(0.92_0.006_80_/_0.2)] bg-card overflow-hidden">
+        <summary class="flex w-full items-center justify-between px-5 py-4">
+          <span class="flex items-center gap-3">
+            <span class="flex size-7 items-center justify-center rounded-full bg-primary-10 text-xs font-bold text-primary">6</span>
+            <span class="text-sm font-semibold text-fg">Главный оценщик</span>
+          </span>
+          <i data-lucide="chevron-down" class="chevron size-4 text-muted"></i>
+        </summary>
+        <div class="divide-y divide-[color:var(--border)] border-t border-border px-5 pb-4">
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Опыт работы</p><p class="text-sm text-fg-75">Более 5 лет</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Проф. образование</p><p class="text-sm text-fg-75">Да</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Членство в СРО</p><p class="text-sm text-fg-75">Да</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Квал. аттестат</p><p class="text-sm text-fg-75">Мин. 1</p></div>
+          <div class="py-3"><p class="mb-1 text-xs font-semibold text-primary">Функции</p><p class="text-sm text-fg-75">Исполнение 1–3 кат., контроль 1–3 кат., организация работы</p></div>
+        </div>
+      </details>
+    </div>
+
+    <div class="mt-8">
+      <blockquote class="quote">
+        <p class="text-lg font-medium leading-relaxed text-fg">Я прошла путь от исполнителя до руководителя направления. Сейчас моя роль — продолжать создавать. Чтобы каждый сотрудник чувствовал: „Я сейчас там, где должен быть. Здесь мне доверяют, здесь я развиваюсь, здесь мой вклад важен“</p>
+        <footer>Дарья, генеральный директор ООО «АРКА»</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OFFICE (medium) ================= -->
+<section id="office" class="section-wrap px-4 py-16 sm:px-6 lg:px-8">
+  <div class="section-bg"></div>
+  <div class="overlay-medium"></div>
+  <div class="section-inner">
+    <div class="mb-10">
+      <h2 class="heading-rule t-h2 text-fg">Офис и география команды</h2>
+    </div>
+
+    <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-center">
+      <div class="flex flex-col gap-4 sm:w-1/3">
+        <div class="rounded-2xl border border-border bg-card p-5">
+          <div class="mb-3 flex items-start gap-2">
+            <div class="relative mt-1 flex size-4 shrink-0 items-center justify-center">
+              <span class="size-2.5 rounded-full bg-primary"></span>
+            </div>
+            <p class="text-sm text-fg"><span class="font-normal block">Головной офис</span><span class="font-semibold block">Санкт-Петербург, ул. Торжковская, д. 5</span></p>
+          </div>
+          <p class="mt-1 text-xs text-muted leading-relaxed">Современные, оборудованные рабочие места в БЦ в шаговой доступности от м. Чёрная речка</p>
+        </div>
+        <div class="flex items-center gap-3 rounded-2xl border border-border bg-card p-5">
+          <div class="relative flex size-4 shrink-0 items-center justify-center">
+            <span class="size-2.5 rounded-full bg-primary"></span>
+          </div>
+          <div><p class="text-sm text-fg"><span class="font-normal">Удалённо</span> <span class="font-semibold">Москва</span></p></div>
+        </div>
+        <div class="flex items-center gap-3 rounded-2xl border border-border bg-card p-5">
+          <div class="relative flex size-4 shrink-0 items-center justify-center">
+            <span class="size-2.5 rounded-full bg-primary"></span>
+          </div>
+          <div><p class="text-sm text-fg"><span class="font-normal">Удалённо</span> <span class="font-semibold">Новосибирск</span></p></div>
+        </div>
+      </div>
+      <div class="flex justify-center sm:w-2/3">
+        <img src="assets/office-photo.jpg" alt="Рабочие места офиса Группы компаний АРКА, Санкт-Петербург, ул. Торжковская, 5" width="1086" height="814" loading="lazy" decoding="async" class="h-auto w-full rounded-2xl" style="max-width:430px;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ATMOSPHERE (deep) ================= -->
+<section id="atmosphere" class="section-wrap px-4 py-16 sm:px-6 lg:px-8">
+  <div class="section-bg"></div>
+  <div class="overlay-deep"></div>
+  <div class="section-inner">
+    <div class="mb-10">
+      <h2 class="heading-rule t-h2 text-fg">Атмосфера: поддержка, доверие, взрослые отношения</h2>
+    </div>
+
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+      <div class="rounded-3xl border border-border bg-card p-6">
+        <h3 class="mb-4 text-base font-bold text-fg">Как реагируют на ошибки</h3>
+        <p class="mb-4 text-sm text-fg-75 leading-relaxed">В компании не ищут виноватых — разбирают, чтобы не повторять.</p>
+        <div class="flex flex-col gap-3">
+          <blockquote class="quote"><p class="text-sm font-medium leading-relaxed text-fg">Коллеги прокомментировали ошибки, объяснили, как сделать лучше, поделились опытом</p><footer>Виктория, оценщик</footer></blockquote>
+          <blockquote class="quote"><p class="text-sm font-medium leading-relaxed text-fg">Реакция всегда спокойная и конструктивная. Разбираем подробно</p><footer>Анастасия, ассистент оценщика</footer></blockquote>
+        </div>
+      </div>
+      <div class="rounded-3xl border border-border bg-card p-6">
+        <h3 class="mb-4 text-base font-bold text-fg">Взаимовыручка и гибкость</h3>
+        <div class="flex flex-col gap-3">
+          <blockquote class="quote"><p class="text-sm font-medium leading-relaxed text-fg">Можно уйти к врачу на час днём, а потом доработать вечером</p><footer>Виктория, оценщик</footer></blockquote>
+          <blockquote class="quote"><p class="text-sm font-medium leading-relaxed text-fg">Коллеги всегда на связи — могу написать в чат, позвонить и получить рекомендацию, если застрял. Нет требований к геройству: если вижу, что не успеваю, говорю об этом заранее — вместе ищем выход</p><footer>Орхан, оценщик</footer></blockquote>
+        </div>
+      </div>
+      <div class="rounded-3xl border border-border bg-card p-6">
+        <h3 class="mb-4 text-base font-bold text-fg">Отсутствие хаоса даже в дедлайнах</h3>
+        <blockquote class="quote"><p class="text-sm font-medium leading-relaxed text-fg">Чёткое распределение задач, погружение в проект дают спокойствие. Дедлайны обсуждаются, паники нет</p><footer>Анастасия, ассистент оценщика</footer></blockquote>
+      </div>
+      <div class="rounded-3xl border border-border bg-card p-6">
+        <h3 class="mb-4 text-base font-bold text-fg">Открытая экспертиза</h3>
+        <blockquote class="quote"><p class="text-sm font-medium leading-relaxed text-fg">Валерия дала развёрнутый ответ по ликвидности компании со ссылками и примерами — знаниями делятся щедро и дружелюбно.</p><footer>Ольга, старший оценщик</footer></blockquote>
+      </div>
+    </div>
+
+    <div class="mt-6">
+      <blockquote class="quote"><p class="text-lg font-medium leading-relaxed text-fg">Интересные, разноплановые задачи и прекрасный устойчивый коллектив — база нашей работы</p><footer>Ольга, старший оценщик</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BENEFITS (medium) ================= -->
+<section id="benefits" class="section-wrap px-4 py-16 sm:px-6 lg:px-8">
+  <div class="section-bg"></div>
+  <div class="overlay-medium"></div>
+  <div class="section-inner">
+    <div class="mb-10">
+      <h2 class="heading-rule t-h2 text-fg">Бенефиты и соцпакет</h2>
+    </div>
+
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="card flex items-start gap-4 p-5">
+        <div class="icon-badge size-10"><i data-lucide="heart-pulse" class="size-5"></i></div>
+        <div><p class="text-sm font-bold text-fg">ДМС</p><p class="mt-1 text-xs text-muted leading-relaxed">После первого года работы</p></div>
+      </div>
+      <div class="card flex items-start gap-4 p-5">
+        <div class="icon-badge size-10"><i data-lucide="bar-chart-3" class="size-5"></i></div>
+        <div><p class="text-sm font-bold text-fg">Квартальные бонусы</p><p class="mt-1 text-xs text-muted leading-relaxed">При наличии прибыли к распределению</p></div>
+      </div>
+      <div class="card flex items-start gap-4 p-5">
+        <div class="icon-badge size-10"><i data-lucide="trending-up" class="size-5"></i></div>
+        <div><p class="text-sm font-bold text-fg">Индексация зарплаты</p><p class="mt-1 text-xs text-muted leading-relaxed">В соответствии с рынком</p></div>
+      </div>
+      <div class="card flex items-start gap-4 p-5">
+        <div class="icon-badge size-10"><i data-lucide="shield" class="size-5"></i></div>
+        <div><p class="text-sm font-bold text-fg">Членство в СРО</p><p class="mt-1 text-xs text-muted leading-relaxed">Оплата членских взносов и страхования при подписании отчётов</p></div>
+      </div>
+      <div class="card flex items-start gap-4 p-5">
+        <div class="icon-badge size-10"><i data-lucide="cake" class="size-5"></i></div>
+        <div><p class="text-sm font-bold text-fg">Дни рождения — выходные</p><p class="mt-1 text-xs text-muted leading-relaxed">День рождения сотрудника и дни рождения его детей до 18 лет — выходные дни</p></div>
+      </div>
+      <div class="card flex items-start gap-4 p-5">
+        <div class="icon-badge size-10"><i data-lucide="book-open" class="size-5"></i></div>
+        <div><p class="text-sm font-bold text-fg">Профессиональная база знаний</p><p class="mt-1 text-xs text-muted leading-relaxed">Экспертная поддержка внутри команды</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EVENTS (deep) ================= -->
+<section id="events" class="section-wrap px-4 py-16 sm:px-6 lg:px-8">
+  <div class="section-bg"></div>
+  <div class="overlay-deep"></div>
+  <div class="section-inner">
+    <div class="mb-10">
+      <h2 class="heading-rule t-h2 text-fg">Жизнь вне проектов</h2>
+      <p class="mt-3 text-base text-fg-80 leading-relaxed max-w-3xl">Последние мероприятия</p>
+    </div>
+
+    <div class="mb-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="card flex gap-4 p-5">
+        <div class="icon-badge size-10"><i data-lucide="palette" class="size-5"></i></div>
+        <div><p class="text-sm font-bold text-primary mb-1">День рождения компании</p><p class="text-xs text-fg-75 leading-relaxed">В этот день мы любим плавать по Неве, ходить в рестораны, мастер-классы по готовке и рисованию картин. Всегда ярко, душевно, творчески.</p></div>
+      </div>
+      <div class="card flex gap-4 p-5">
+        <div class="icon-badge size-10"><i data-lucide="trophy" class="size-5"></i></div>
+        <div><p class="text-sm font-bold text-primary mb-1">День оценщика</p><p class="text-xs text-fg-75 leading-relaxed">Боулинг с партнёрами (юристы «НЦИК») — профессиональный праздник с активным отдыхом.</p></div>
+      </div>
+      <div class="card flex gap-4 p-5">
+        <div class="icon-badge size-10"><i data-lucide="gift" class="size-5"></i></div>
+        <div><p class="text-sm font-bold text-primary mb-1">8 Марта / 23 февраля</p><p class="text-xs text-fg-75 leading-relaxed">Сюрпризы и искренние слова, внимание каждому.</p></div>
+      </div>
+      <div class="card flex gap-4 p-5">
+        <div class="icon-badge size-10"><i data-lucide="coffee" class="size-5"></i></div>
+        <div><p class="text-sm font-bold text-primary mb-1">Дни рождения коллег</p><p class="text-xs text-fg-75 leading-relaxed">Чаепития в офисе и антикафе: настольные игры, угощения, тёплые разговоры.</p></div>
+      </div>
+      <div class="card flex gap-4 p-5">
+        <div class="icon-badge size-10"><i data-lucide="rocket" class="size-5"></i></div>
+        <div><p class="text-sm font-bold text-primary mb-1">Корпоративный дух</p><p class="text-xs text-fg-75 leading-relaxed">Выезды, театры, неформальные встречи — место, куда хочется приходить.</p></div>
+      </div>
+      <div class="card flex gap-4 p-5">
+        <div class="icon-badge size-10"><i data-lucide="map" class="size-5"></i></div>
+        <div><p class="text-sm font-bold text-primary mb-1">Поездки</p><p class="text-xs text-fg-75 leading-relaxed">Вместе мы побывали в Пушкине, Кронштадте, Новгороде, Карелии.</p></div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-3 md:grid-cols-3">
+      <img src="assets/event-boat.jpg" alt="Команда АРКА на теплоходе по Неве в день рождения компании" width="1200" height="1600" loading="lazy" decoding="async" class="aspect-square w-full rounded-3xl object-cover" />
+      <img src="assets/event-boat-2.jpg" alt="Сотрудники АРКА на прогулке по Неве" width="900" height="1200" loading="lazy" decoding="async" class="aspect-square w-full rounded-3xl object-cover" />
+      <img src="assets/event-beach.jpg" alt="Командная поездка сотрудников АРКА на побережье" width="1600" height="1200" loading="lazy" decoding="async" class="aspect-square w-full rounded-3xl object-cover" />
+      <img src="assets/event-paint-1.jpg" alt="Корпоративный мастер-класс по рисованию, команда АРКА" width="756" height="1008" loading="lazy" decoding="async" class="aspect-square w-full rounded-3xl object-cover" />
+      <img src="assets/event-paint-2.jpg" alt="Сотрудники АРКА на мастер-классе по живописи" width="1307" height="808" loading="lazy" decoding="async" class="aspect-square w-full rounded-3xl object-cover" />
+      <img src="assets/event-paint-3.jpg" alt="Готовые работы с корпоративного мастер-класса АРКА" width="756" height="1008" loading="lazy" decoding="async" class="aspect-square w-full rounded-3xl object-cover" />
+    </div>
+
+    <div class="mt-8">
+      <blockquote class="quote"><p class="text-lg font-medium leading-relaxed text-fg">Всё это вдохновляет на новые идеи, сплачивает команду и делает работу местом, куда хочется возвращаться</p><footer>Юлия, офис-менеджер</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CLOSING ================= -->
+<section class="relative w-full overflow-hidden px-4 py-24 sm:px-6 lg:px-8">
+  <div class="closing-bg"></div>
+  <div class="closing-overlay"></div>
+  <div class="relative z-20 mx-auto max-w-6xl">
+    <h2 class="t-h2 tracking-tight text-fg text-center text-balance">Присоединяйся к команде <span class="text-primary">АРКИ</span></h2>
+    <p class="mt-5 text-lg text-fg-75 text-center">Мы ждём тех, кто хочет расти в оценке бизнеса, НМА и консалтинге.</p>
+    <div class="mt-4 h-px w-24 bg-primary mx-auto opacity-60"></div>
+    <div class="mt-8 w-full">
+      <blockquote class="quote">
+        <p class="text-lg font-medium leading-relaxed text-fg">Нет невыполнимых задач: есть лень, нехватка времени и неуверенность. Поэтому если хочешь чего-то добиться в оценке — только в АРКУ</p>
+        <footer>Валерия, старший оценщик</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <a href="llms.txt">llms.txt</a><span>·</span><a href="llms-full.txt">llms-full.txt</a>
+</footer>
+
+<script>
+  lucide.createIcons();
+  document.querySelectorAll("blockquote.quote").forEach((el) => {
+    el.setAttribute("aria-label", "Цитата");
+  });
+  (function revealQuotes(){
+    const quotes = document.querySelectorAll("blockquote.quote");
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) {
+      quotes.forEach((el) => el.classList.add("is-in"));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        e.target.classList.add("is-in");
+        io.unobserve(e.target);
+      });
+    }, { threshold: 0.18, rootMargin: "0px 0px -6% 0px" });
+    quotes.forEach((el) => {
+      const sibs = [...el.parentElement.querySelectorAll(":scope > blockquote.quote")];
+      const i = sibs.indexOf(el);
+      if (i > 0) el.style.animationDelay = (i * 90) + "ms";
+      io.observe(el);
+    });
+  })();
+
+  const themeToggle = document.getElementById("theme-toggle");
+  function syncThemeToggle(isLight){
+    themeToggle.setAttribute("aria-checked", isLight ? "true" : "false");
+    themeToggle.setAttribute("aria-label", isLight ? "Тема: светлая" : "Тема: тёмная");
+  }
+  syncThemeToggle(document.documentElement.classList.contains("light"));
+  themeToggle.addEventListener("click", () => {
+    const isLight = document.documentElement.classList.toggle("light");
+    syncThemeToggle(isLight);
+    try{ localStorage.setItem("arka-theme", isLight ? "light" : "dark"); }catch(e){}
+  });
+
+  const navItems = [
+    { sel: "#ranking" }, { sel: "#cases" }, { sel: "#learning" }, { sel: "#values" },
+    { sel: "#grades" }, { sel: "#office" }, { sel: "#atmosphere" }, { sel: "#benefits" }, { sel: "#events" },
+  ];
+  const links = document.querySelectorAll(".nav-link");
+  const progressFill = document.querySelector("#scroll-progress > span");
+  const burger = document.getElementById("burger");
+  const mobileMenu = document.getElementById("mobile-menu");
+  let lastActive = "";
+  let ticking = false;
+
+  function updateChrome(){
+    ticking = false;
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    const p = max > 0 ? Math.min(1, window.scrollY / max) : 0;
+    if (progressFill) progressFill.style.transform = "scaleX(" + p + ")";
+
+    let current = "";
+    navItems.forEach(({sel}) => {
+      const el = document.querySelector(sel);
+      if(!el) return;
+      if(el.getBoundingClientRect().top <= 80) current = sel;
+    });
+    if (current === lastActive) return;
+    lastActive = current;
+    links.forEach(l => l.classList.toggle("active", l.dataset.href === current));
+  }
+  function onScroll(){
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(updateChrome);
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  updateChrome();
+
+  links.forEach(l => l.addEventListener("click", () => {
+    const el = document.querySelector(l.dataset.href);
+    if(el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    mobileMenu.classList.remove("open");
+    burger.setAttribute("aria-expanded", "false");
+  }));
+
+  burger.addEventListener("click", () => {
+    const open = mobileMenu.classList.toggle("open");
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+
+  (function applyTypograf(){
+    const skip = /^(SCRIPT|STYLE|TEXTAREA|CODE|PRE|SVG|PATH)$/;
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode(node){
+        const p = node.parentElement;
+        if (!p || skip.test(p.tagName)) return NodeFilter.FILTER_REJECT;
+        if (!node.nodeValue || !/\S/.test(node.nodeValue)) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    for (const n of nodes) {
+      let t = n.nodeValue;
+      t = t.replace(/(\d) (?=\d{3}\b)/g, "$1\u00A0");
+      t = t.replace(/(\d+)\s+(₽|%|год|года|лет|тыс)/gi, "$1\u00A0$2");
+      t = t.replace(/(^|[\s(«„])(и|а|в|во|не|ни|на|но|из|за|по|к|ко|о|об|от|до|для|при|без|над|под|про|со|у)\s+/gmi, "$1$2\u00A0");
+      t = t.replace(/\s+—/g, "\u00A0—");
+      t = t.replace(/(ул\.|д\.|м\.|ООО)\s+/g, "$1\u00A0");
+      n.nodeValue = t;
+    }
+  })();
+</script>
+
+</body>
+</html>

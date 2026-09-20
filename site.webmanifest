@@ -1,0 +1,17 @@
+{
+  "name": "Карьера в Группе компаний АРКА",
+  "short_name": "АРКА",
+  "lang": "ru",
+  "description": "Оценка бизнеса и активов, НМА и стоимостной консалтинг. Карьера для оценщиков.",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#0d0d0d",
+  "theme_color": "#C41E3A",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

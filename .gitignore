@@ -1,0 +1,26 @@
+# Logs
+logs
+*.log
+
+# Dependencies
+node_modules/
+legacy/node_modules/
+
+# Архив шаблона — не в git
+legacy/
+
+# Env
+.env
+.env.*
+!.env.example
+!.legacy/.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.suo
+*.sw?
+
